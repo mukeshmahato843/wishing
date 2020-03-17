@@ -564,10 +564,27 @@ h3 {
 <!-- Enter Name Popup Window -->
 <figure><center>
 	<h1 style="text-transform: uppercase;"><script type="text/javascript" language="Javascript">
-                 var a=prompt("Enter Your Name","Mukesh Mahato");
-                 document.write(a);
+                 var a=prompt("Enter Your Name","MUKESH");
+                 
+if (a == null || a == "") {
+    a = "MUKESH";
+  } else {
+    a = "MUKESH"
+}
+document.write(a);
                 </script> </h1>
-	<h1 style="text-transform: uppercase;"><script type="text/javascript" language="Javascript">
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "Harry Potter");
+  
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+	<!--h1 style="text-transform: uppercase;"><script type="text/javascript" language="Javascript">
                     
                     document.write(a);
                       </script> </h1>
@@ -590,7 +607,7 @@ h3 {
     <h1 style="text-transform: uppercase;"><script type="text/javascript" language="Javascript">
                     
                     document.write(a);
-                      </script></h1>
+                      </script></h1-->
 
 </center></figure>
 
